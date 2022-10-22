@@ -1,0 +1,128 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/taraskovalcuk/Projects/Univercity/Univercity.Application/Univercity.Application.csproj": {}
+  },
+  "projects": {
+    "/Users/taraskovalcuk/Projects/Univercity/Univercity.Application/Univercity.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/taraskovalcuk/Projects/Univercity/Univercity.Application/Univercity.Application.csproj",
+        "projectName": "Univercity.Application",
+        "projectPath": "/Users/taraskovalcuk/Projects/Univercity/Univercity.Application/Univercity.Application.csproj",
+        "packagesPath": "/Users/taraskovalcuk/.nuget/packages/",
+        "outputPath": "/Users/taraskovalcuk/Projects/Univercity/Univercity.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/taraskovalcuk/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/taraskovalcuk/Projects/Univercity/Univercity.Data/Univercity.Data.csproj": {
+                "projectPath": "/Users/taraskovalcuk/Projects/Univercity/Univercity.Data/Univercity.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/taraskovalcuk/Projects/Univercity/Univercity.Data/Univercity.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/taraskovalcuk/Projects/Univercity/Univercity.Data/Univercity.Data.csproj",
+        "projectName": "Univercity.Data",
+        "projectPath": "/Users/taraskovalcuk/Projects/Univercity/Univercity.Data/Univercity.Data.csproj",
+        "packagesPath": "/Users/taraskovalcuk/.nuget/packages/",
+        "outputPath": "/Users/taraskovalcuk/Projects/Univercity/Univercity.Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/taraskovalcuk/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

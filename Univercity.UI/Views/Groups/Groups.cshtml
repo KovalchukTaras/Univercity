@@ -1,0 +1,69 @@
+﻿@using Univercity.Data.Models
+@model IEnumerable<Group>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <h1>Groups</h1>
+
+    @if (Model.Count() > 0)
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>GroupId</th>
+                    <th>CourseId</th>
+                    <th>GroupName</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var group in Model)
+                {
+                    <tr>
+                        <td>@group.Id</td>
+                        <td>@group.CourseId</td>
+                        <td>@group.GroupName</td>
+                        <td>
+                            <a class="btn btn-danger" asp-route-id=@group.Id asp-controller="Groups" asp-action="DeleteGroup">Delete</a>
+
+                            <a class="btn btn-info" asp-area="" asp-route-id=@group.Id asp-controller="Students" asp-action="Students">Show Students</a>
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+
+
+        <br />
+
+        <form asp-controller="Groups" asp-action="ChangeName">
+            <br />
+
+            <h4> Change group name:</h4>
+            Select group:
+            <table>
+                <tr>
+                    <select type="text" name="id" class="form-controll input-lg">
+                        @foreach (var group in Model)
+                        {
+                            <option value="@group.Id">@group.GroupName</option>
+                        }
+                </tr>
+                <tr>
+                    <td>Enter new name: </td>
+                    <td><input type="text" name="name" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Submit" class="btn btn-info" /></td>
+                </tr>
+            </table>
+        </form>
+    }
+    else
+    {
+        <h4>This course has no groups</h4>
+    }
+</div>

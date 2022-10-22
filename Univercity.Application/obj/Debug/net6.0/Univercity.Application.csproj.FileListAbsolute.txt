@@ -1,0 +1,15 @@
+/Users/taraskovalcuk/Projects/Univercity/Univercity.Application/bin/Debug/net6.0/Univercity.Application.deps.json
+/Users/taraskovalcuk/Projects/Univercity/Univercity.Application/bin/Debug/net6.0/Univercity.Application.dll
+/Users/taraskovalcuk/Projects/Univercity/Univercity.Application/bin/Debug/net6.0/Univercity.Application.pdb
+/Users/taraskovalcuk/Projects/Univercity/Univercity.Application/bin/Debug/net6.0/Univercity.Data.dll
+/Users/taraskovalcuk/Projects/Univercity/Univercity.Application/bin/Debug/net6.0/Univercity.Data.pdb
+/Users/taraskovalcuk/Projects/Univercity/Univercity.Application/obj/Debug/net6.0/Univercity.Application.csproj.AssemblyReference.cache
+/Users/taraskovalcuk/Projects/Univercity/Univercity.Application/obj/Debug/net6.0/Univercity.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/taraskovalcuk/Projects/Univercity/Univercity.Application/obj/Debug/net6.0/Univercity.Application.AssemblyInfoInputs.cache
+/Users/taraskovalcuk/Projects/Univercity/Univercity.Application/obj/Debug/net6.0/Univercity.Application.AssemblyInfo.cs
+/Users/taraskovalcuk/Projects/Univercity/Univercity.Application/obj/Debug/net6.0/Univercity.Application.csproj.CoreCompileInputs.cache
+/Users/taraskovalcuk/Projects/Univercity/Univercity.Application/obj/Debug/net6.0/Univercity.Application.csproj.CopyComplete
+/Users/taraskovalcuk/Projects/Univercity/Univercity.Application/obj/Debug/net6.0/Univercity.Application.dll
+/Users/taraskovalcuk/Projects/Univercity/Univercity.Application/obj/Debug/net6.0/refint/Univercity.Application.dll
+/Users/taraskovalcuk/Projects/Univercity/Univercity.Application/obj/Debug/net6.0/Univercity.Application.pdb
+/Users/taraskovalcuk/Projects/Univercity/Univercity.Application/obj/Debug/net6.0/ref/Univercity.Application.dll

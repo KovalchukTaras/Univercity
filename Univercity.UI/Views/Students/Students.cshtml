@@ -1,0 +1,74 @@
+﻿@using Univercity.Data.Models
+@model IEnumerable<Student>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <h1>Students</h1>
+
+    @if (Model.Count() > 0)
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>StudentId</th>
+                    <th>GroupId</th>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var student in Model)
+                {
+                    <tr>
+                        <td>@student.Id</td>
+                        <td>@student.GroupId</td>
+                        <td>@student.FirstName</td>
+                        <td>@student.LastName</td>
+                        <td>
+                            <a class="btn btn-danger" asp-route-id=@student.Id asp-controller="Students" asp-action="DeleteStudent">Delete</a>
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+
+
+        <br />
+        <form asp-controller="Students" asp-action="ChangeName">
+            <br />
+
+            <h4> Change student name:</h4>
+            Select Student:
+            <table>
+                <tr>
+                    <select type="text" name="id" class="form-controll input-lg">
+                        @foreach (var student in Model)
+                        {
+                            <option value="@student.Id">@student.FirstName @student.LastName</option>
+                        }
+                </tr>
+                <tr>
+                    <td>Enter First Name: </td>
+                    <td><input type="text" name="firstName" /></td>
+                </tr>
+                <tr>
+                    <td>Enter Last Name: </td>
+                    <td><input type="text" name="lastName" /></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><input type="submit" value="Submit" class="btn btn-info" /></td>
+                </tr>
+            </table>
+        </form>
+    }
+    else
+    {
+        <h4>This group has no students</h4>
+    }
+
+</div>
